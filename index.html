@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<html>
+<head>
+	<title>Prueba-Modelo Basico de Eventos</title>
+</head>
+<body onunload="unloadHandler();">
+<h1>Referencia: <a href="https://uniwebsidad.com/libros/javascript/capitulo-6/modelo-basico-de-eventos-2">6.2. Modelo basico de eventos</a></h1>
+
+<p class="accion_ejecutada"> </p>
+
+<ol>
+	<li>
+		Evento onblur<br>
+		Etiquetas button, input, label, select, textarea, body.<br>
+		<button id="button_onblur" >Button onblur</button>
+		<input id="input_onblur" >
+		<label id="label_onblur" >Etiqueta onblur</label>
+		<select id="select_onblur" >
+			<option value="valor 1" selected> Valor 1 </option>
+			<option value="valor 2"> Valor 2 </option>
+		</select>
+		<textarea id="textarea_onblur"  rows="1" columns="20">Area de texto blur</textarea>
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onchange<br>
+		Etiquetas input, select y textarea <br>
+		<input id="input_onchange">
+		<select id="select_onchange">
+			<option value="valor 1" selected> Valor 1 </option>
+			<option value="valor 2"> Valor 2 </option>
+		</select>
+		<textarea id="textarea_onchange"  rows="1" columns="20">Area de texto onchange</textarea>
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onclick<br>
+		Todos los elementos.
+		<div id="div_onclick">div para click</div>
+		<button id="button_onclick">boton para click</button>
+		<img id="img_onclick" src="https://thumbs.dreamstime.com/z/closeup-shot-cute-fluffy-cat-bright-blue-eyes-189751316.jpg" width="200px" height="200px">
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento ondblclick<br>
+		Todos los elementos.
+		<div id="div_ondblclick">div para click</div>
+		<button id="button_ondblclick">boton para click</button>
+		<img id="img_ondblclick" src="https://thumbs.dreamstime.com/z/closeup-shot-cute-fluffy-cat-bright-blue-eyes-189751316.jpg" width="200px" height="200px">
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onfocus<br>
+		Etiquetas button, input, label, select, textarea, body<br>
+		<button id="button_onfocus">button_onfocus</button>
+		<input id="input_onfocus">
+		<label id="label_onfocus">label_onfocus</label>
+		<select id="select_onfocus">
+			<option value="valor 1" selected> Valor 1 </option>
+			<option value="valor 2"> Valor 2 </option>
+		</select>
+		<textarea id="textarea_onfocus"  rows="1" columns="20">Area de texto onfocus</textarea>
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onkeydown<br>
+		Elementos de formulario y &lt;body&gt;<br>
+		<form id="form_onkeydown">
+		  <label for="fname">Primer nombre:</label><br>
+		  <input type="text" id="fname" name="fname" value="Julian"><br>
+		  <label for="lname">Apellido:</label><br>
+		  <input type="text" id="lname" name="lname" value="Ramirez"><br><br>
+		  <input type="submit" value="Submit">
+		</form> 
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onkeypress<br>
+		Elementos de formulario y &lt;body&gt;<br>
+		<form id="form_onkeypress">
+		  <label for="fname">Primer nombre:</label><br>
+		  <input type="text" id="fname" name="fname" value="Julian"><br>
+		  <label for="lname">Apellido:</label><br>
+		  <input type="text" id="lname" name="lname" value="Ramirez"><br><br>
+		  <input type="submit" value="Submit">
+		</form> 
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onkeyup<br>
+		Elementos de formulario y &lt;body&gt;<br>
+		<form id="form_onkeyup">
+		  <label for="fname">Primer nombre:</label><br>
+		  <input type="text" id="fname" name="fname" value="Julian"><br>
+		  <label for="lname">Apellido:</label><br>
+		  <input type="text" id="lname" name="lname" value="Ramirez"><br><br>
+		  <input type="submit" value="Submit">
+		</form> 
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onload<br>
+		Ocurre cuando la página se ha cargado completamente, etiqueta &lt;body&gt;
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onmousedown<br>
+		Pulsar sin soltar un botón del ratón, todos los elementos <br>
+
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onmousemove<br>
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onmouseout<br>
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onmouseover<br>
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onmouseup<br>
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onreset<br>
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>		
+		Evento onresize<br>
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onselect<br>
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onsubmit<br>
+		<p class="accion_ejecutada"></p>
+	</li>
+	<li>
+		Evento onunload<br>
+		- Cuando se abandona la página (e.g. al cerrar el navegador) - Etiqueta &lt;body&gt; y dependiendo 
+		del navegador puede no funcionar como se espera.
+		<p class="accion_ejecutada"></p>
+	</li>
+</ol>
+
+<!--
+<button id="onblur" class="btn">Boton onblur</button><br>
+<input type="" name="">
+-->
+
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/handlers.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
