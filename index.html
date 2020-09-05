@@ -8,15 +8,32 @@
 <h1>Referencia: <a href="https://uniwebsidad.com/libros/javascript/capitulo-6/modelo-basico-de-eventos-2">6.2. Modelo basico de eventos</a></h1>
 
 <p class="accion_ejecutada"> </p>
+<!--
+ Etiqueta o identificador que permita al usuario detectar cuando es elemento hay que considerarlo como que va a tener una acción remota o distribuida. Ese es lo que hay que ver. Se me ocurren dos soluciones a manera de prueba, esto después se puede mejorar. Una es que tu (Alan) leas el titulo del botón (el nombre) con su identificador, y antes de que haga alguna otra cosa, que le agregue una etiqueta "adef='true'" (o similar). 
+
+ Detectar cual elemento que se generó en esa acción va a tener una actividad remota , o va a tener un comportamiento dentro de un sistema distribuido. 
+
+ ¿Cómo podría hacerlo el desarrollador?
+
+ Puede ser que el desarrollador...
+
+ Siguientes tareas: 
+
+ - Esquema o diagrama de clases o funciones (o bloques) de esto que se mostró, de forma que eso va a ser parte de la arquitectura, de tal forma que se vea y que no se necesite mostrar el código.
+ 
+ -¿Cómo funciona esta propuesta con el Muro Colaborativo o el ECA (Escritorio Colaborativo Aumentado)?
+
+ Elementos HTML. Investigar como agregar una etiqueta XHTML.
+	-->
 
 <ol>
 	<li>
 		Evento onblur<br>
 		Etiquetas button, input, label, select, textarea, body.<br>
-		<button id="button_onblur" >Button onblur</button>
-		<input id="input_onblur" >
-		<label id="label_onblur" >Etiqueta onblur</label>
-		<select id="select_onblur" >
+		<button id="button_onblur" adef="true" distribuido>Button onblur</button>
+		<input id="input_onblur" distribuido>
+		<label id="label_onblur" distribuido>Etiqueta onblur</label>
+		<select id="select_onblur" distribuido>
 			<option value="valor 1" selected> Valor 1 </option>
 			<option value="valor 2"> Valor 2 </option>
 		</select>
@@ -38,7 +55,7 @@
 		Evento onclick<br>
 		Todos los elementos.
 		<div id="div_onclick">div para click</div>
-		<button id="button_onclick">boton para click</button>
+		<button id="button_onclick" distribuido>boton para click</button>
 		<img id="img_onclick" src="https://thumbs.dreamstime.com/z/closeup-shot-cute-fluffy-cat-bright-blue-eyes-189751316.jpg" width="200px" height="200px">
 		<p class="accion_ejecutada"></p>
 	</li>

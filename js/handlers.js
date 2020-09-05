@@ -3,7 +3,12 @@
 function onblurHandler(){
 	var ae = $('.accion_ejecutada');
 	for(var i = ae.length-1; i >= 0; i--){
-		ae[i].innerHTML= "<h1>Evento onblur en "+this.id+"</h1>";	
+		var attr = $(this).attr('distribuido');
+		if(typeof attr != typeof undefined && attr !== false){
+			ae[i].innerHTML= "<h1>Evento onblur en "+this.id+" DISTRIBUIDO</h1>";		
+		}else{
+			ae[i].innerHTML= "<h1>Evento onblur en "+this.id+"</h1>";	
+		}
 	}
 	
 }
@@ -19,7 +24,13 @@ function onchangeHandler(){
 function onclickHandler(){
 	var ae = $('.accion_ejecutada');
 	for(var i = ae.length-1; i >= 0; i--){
-		ae[i].innerHTML= "<h1>Evento onclick en "+this.id+"</h1>";	
+		var attr = $(this).attr('distribuido');
+		if(typeof attr != typeof undefined && attr !== false){
+			ae[i].innerHTML= "<h1>Evento onclick en "+this.id+" DISTRIBUIDO</h1>";		
+		}else{
+			console.log("lol");
+			ae[i].innerHTML= "<h1>Evento onclick en "+this.id+"</h1>";	
+		}
 	}
 	
 }
@@ -27,7 +38,14 @@ function onclickHandler(){
 function ondblclickHandler(){
 	var ae = $('.accion_ejecutada');
 	for(var i = ae.length-1; i >= 0; i--){
-		ae[i].innerHTML= "<h1>Evento ondblclick en "+this.id+"</h1>";	
+		var attr = $(this).attr('disitribuido');
+		// For some browsers, `attr` is undefined; for others,
+		// `attr` is false.  Check for both.
+		if (typeof attr !== typeof undefined && attr !== false) {
+			ae[i].innerHTML= "<h1>Evento ondblclick en "+this.id+" DISTRIBUIDO</h1>";
+		}else{
+			ae[i].innerHTML= "<h1>Evento ondblclick en "+this.id+"</h1>";		
+		}
 	}
 	
 }
